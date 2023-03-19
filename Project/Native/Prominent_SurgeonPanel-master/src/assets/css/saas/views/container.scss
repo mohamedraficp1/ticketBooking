@@ -1,0 +1,171 @@
+.user-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $app-background;
+}
+
+.app-content-container {
+  position: relative;
+  left: 250;
+  height: 100%;
+  background-color: $primary-color;
+  // background-color: #f4f7fe;
+}
+
+.top-nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d1d1d;
+  color: white;
+  padding: 10px 20px;
+  @include respond-above(xs) {
+    display: none;
+  }
+}
+
+.container-center {
+  @include respond-below(xs) {
+    margin-top: 50px;
+  }
+  @include respond-above(xs) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.container-data-table {
+  padding: 0 20px;
+  height: 100%;
+}
+.survey-form-right-container {
+  width: 100%;
+  // height: 100%;
+  // background-color: blue;
+
+  .sf-r-qn-container {
+    padding: 25px;
+    height: 55vh;
+    overflow-y: auto;
+    .sfr-card-container {
+      position: relative;
+      .sfr-card-close-btn-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        top: -5px;
+        right: -5px;
+        border-radius: 50%;
+        background-color: $danger-red;
+      }
+      .sfr-card-text:focus {
+        outline: none;
+        border: none;
+        background-color: #f1e9e9;
+      }
+    }
+    .card-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 2px;
+      left: -25px;
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      background-color: $primary-color;
+    }
+  }
+}
+.card-sub-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: "#000";
+}
+
+.card-sub-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: "#000";
+}
+
+.surgeon-details-content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  // background-color: aqua;
+}
+
+.position-rfh {
+  position: relative;
+  height: 100%;
+}
+
+.sd-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-card-container {
+  margin: 25px 0;
+}
+
+.detail-tile-label {
+  font-size: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: $label-grey;
+}
+.detail-tile-value {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+.detail-survey-name-container {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000;
+  margin: 10px 0;
+}
+.assigned-survey-tile {
+  display: flex;
+}
+.assigned-survey-container {
+  // display: flex;
+  // flex-wrap: wrap;
+}
+.add-patient-right-box {
+  max-width: 400px;
+}

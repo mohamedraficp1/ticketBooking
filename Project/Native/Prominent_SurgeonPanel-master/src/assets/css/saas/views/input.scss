@@ -1,0 +1,72 @@
+.input-form {
+  max-width: 500px;
+  min-width: 300px;
+  .app-input {
+    width: 100%;
+    border: 1px solid #e0dbdb;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-style: italic;
+    background-color: #ffffff !important;
+    margin: 8px 0;
+  }
+  .app-input:focus {
+    outline: none;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #fff !important;
+    -webkit-box-shadow: 0 0 4pt 0.5pt rgba(213, 201, 201, 0.75);
+    -moz-box-shadow: 0 0 4pt 0.5pt rgba(213, 201, 201, 0.75);
+    box-shadow: 0 0 4pt 0.5pt rgba(213, 201, 201, 0.75);
+  }
+  .btn-container {
+    padding: 10px 0px;
+  }
+}
+
+.dropdown-container {
+  max-width: 500px !important;
+  min-width: 240px !important;
+}
+
+.input-dropdown {
+  width: 100%;
+  border: 1px solid #e0dbdb;
+  padding: 3px 5px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-style: italic;
+  background-color: #ffffff !important;
+  margin: 8px 0;
+}
+
+.btn-small-primary {
+  font-size: 13px;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.btn-small-outline {
+  font-size: 13px;
+  border-color: $primary-color;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 30px;
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.add-survey-form {
+  max-width: auto !important;
+  min-width: auto !important;
+}
+.edit-surgeon-form {
+  max-width: 250px;
+}

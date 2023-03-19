@@ -1,0 +1,85 @@
+table.table-container {
+  border-radius: 1em;
+  table-layout: auto;
+  width: 100%;
+  thead {
+    th:nth-child(1) {
+      min-width: 150px;
+    }
+
+    th {
+      font-size: 12px;
+      color: #a39b9b;
+      padding: 20px 20px;
+      border-bottom-width: 1px;
+      border-color: #d8d2d2;
+      text-align: left;
+      position: sticky;
+      top: -10px;
+      background-color: #fff;
+      z-index: 2;
+    }
+  }
+  tbody {
+    tr {
+      background-color: #fff;
+
+      td {
+        font-size: 13px;
+        padding: 10px 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: #000;
+      }
+    }
+  }
+}
+
+.data-table {
+  overflow-x: auto;
+  height: 100%;
+}
+
+table.c {
+  table-layout: auto;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+.table-card-title {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.table-white-card {
+  position: relative;
+  height: calc(100% - 40px);
+  margin: 20px 0;
+}
+
+.table-header {
+  position: sticky;
+  top: -10px;
+  background-color: #fff;
+}
+
+.category-table {
+  thead {
+    th:nth-child(1) {
+      min-width: auto !important;
+      max-width: 20px !important;
+    }
+  }
+}
+
+.react-datepicker-popper {
+  z-index: 9999 !important;
+}
+
+.position-static {
+  position: static !important;
+}

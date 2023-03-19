@@ -1,0 +1,42 @@
+.sidebar-container {
+  height: 100vh;
+}
+.pro-sidebar-inner {
+  background-color: #ffffff !important;
+}
+
+.sidebar-collapse-icon-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.sidebar-header-container {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .brand-detail-container {
+    padding-top: 20px;
+  }
+}
+
+.sidebar-brand-title {
+  margin-top: 20px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sidebar-menu-label{
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.sidebar-menu-label-active{
+  font-weight: 600;
+}
+.sidebar-footer-label{
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #000;
+}

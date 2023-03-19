@@ -1,0 +1,65 @@
+.login-card {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 40px;
+  -webkit-box-shadow: 3px 9px 45px -6px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 3px 9px 45px -6px rgba(0, 0, 0, 0.43);
+  box-shadow: 3px 9px 45px -6px rgba(0, 0, 0, 0.43);
+  @include respond-below(xs) {
+    height: 100vh;
+    width: 100vw;
+    padding: 30px 20px;
+  }
+}
+.auth-title {
+  color: $primary-color;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.login-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.app-auth-input {
+  width: 100%;
+  border: none;
+  padding: 13px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-style: italic;
+  background-color: #f8f8f8 !important;
+  margin: 8px 0;
+}
+.app-auth-input:focus {
+  outline: none;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #fff !important;
+  -webkit-box-shadow: 0 0 4pt 0.5pt rgba(213, 201, 201, 0.75);
+  -moz-box-shadow: 0 0 4pt 0.5pt rgba(213, 201, 201, 0.75);
+  box-shadow: 0 0 4pt 0.5pt rgba(213, 201, 201, 0.75);
+}
+.login-input {
+  background-color: transparent;
+  color: #000;
+  margin-top: 20px;
+}
+.auth-btn {
+  width: 100%;
+  background-color: $primary-color;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.auth-btn:hover {
+  background-color: $normal-blue;
+  color: #fff;
+  font-weight: bold;
+}
+.login-label {
+  color: $primary-color;
+}
