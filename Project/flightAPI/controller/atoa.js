@@ -8,7 +8,7 @@ exports.createAtoa = async (req, res) => {
   }
 
   try {
-    const newPost = await Atoa.create({
+    const newAtoa = await Atoa.create({
       destinationFrom,
       destinationTO,
       iataFrom,
@@ -16,7 +16,7 @@ exports.createAtoa = async (req, res) => {
     });
     res
       .status(201)
-      .json({ message: "A to a created successfully", data: newPost });
+      .json({ message: "A to a created successfully", data: newAtoa });
   } catch (err) {
     res.status(500).json({ error: "Server error" });
   }
@@ -24,8 +24,8 @@ exports.createAtoa = async (req, res) => {
 
 exports.getAllAtoa = async (req, res) => {
   try {
-    const allPosts = await Atoa.find();
-    res.status(200).json({ data: allPosts });
+    const allAtoa = await Atoa.find();
+    res.status(200).json({ data: allAtoa });
   } catch (err) {
     res.status(500).json({ error: "Server error" });
   }
